@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+            <!-- bootstrap -->
+            <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+            <!-- fontawsom -->
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+            <style>
+            ::placeholder input{
+                color: black;
+            }
+            </style>
+    
+</head>
+<body id="bg" style="background-image: url(./snowbg.jpg);margin-top: 100px; background-size: cover;">
+    <div class="mt-5 container  border border-1 shadow-lg  py-4" style="background-color: rgba(241, 241, 235, 0.5); border-radius: 20px; width: 70%;">
+        <div class="row mt-5" id="place">
+            <div class="col-md-6">
+               <div class=" align-items-center justify-content-center" style="display: grid;" >
+                    <h1 class="text-center fw-bolder">Place</h1>
+                    <h6 class="text-center" id="date">friday,31 Augest 2024 /12:15PM</h6>
+                    
+               </div>
+
+            </div>
+            <div class="col-md-6">
+                <div class="d-flex align-items-center justify-content-center mt-3 ">
+                    <input class="w-50  form-control shadow-lg rounded-3 border-2 border-dark " type="text" id="wheather" placeholder="Enter city Name" style="background-color:rgba(238, 231, 231, 0.366) ">
+                    <button type="button." onclick="search()" class="ms-3 px-4 py-1 rounded-3  text-dark" style="background-color: rgba(252, 247, 247, 0.197);" >Search</button>
+               </div>
+    
+
+            </div>
+        </div>
+<div id="result">
+            <div class="row">
+                <div class="col-md-6">
+                   <div class=" align-items-center justify-content-center">
+                        <h1 class="text-center mt-3" style="font-size: 110px;">0&deg;c</h1>
+                        <!-- <h6 class="text-center ms-3">patly cloudy</h6> -->
+                   </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="d-flex align-items-center justify-content-center mb-4">
+                        <h4 class="text-center ms-3 shadow-lg border-dark fw-bolder p-4 rounded-pill ">Rain wheather</h4>
+                        <img id="img" src="./weather.svg" alt="" style="height: 190px;">
+    
+                        <!-- <i class="fa-solid fa-temperature-three-quarters fa-sm"></i> <small></small> -->
+    
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-1"></div>
+                
+                <div class="col-md-10">
+                             
+                    <div class="row    d-flex align-items-center justify-content-center">
+                        <!-- <div class="col-md-2"></div> -->
+                        <div class="col-md-3">
+                           <div class="text-center border-end"> 
+                            <h4 class="fw-bolder"> <i class="fa-solid fa-droplet"></i> Humodity</h4>
+                            <h3>00%</h3>
+                        </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="text-center border-end"> 
+                                <h4 class="fw-bolder"> <i class="fa-solid fa-wind"></i>Wind</h4>
+                                <h3>00%</h3>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="text-center"> 
+                                <h4 class="fw-bolder"> <i class="fa-solid fa-temperature-three-quarters"></i>Pressure</h4>
+                                <h3>00%</h3>
+                            </div>
+                        </div>
+                       <!-- <div class="col-md-2"></div> -->
+                    </div>
+            
+                </div>
+                <div class="col-md-1"></div>
+            </div>
+            
+    
+</div>  
+  </div>
+    
+</body>
+<script src="./script.js">
+
+</script>
+
+</html>
