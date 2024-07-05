@@ -144,19 +144,29 @@ const changeBackground=(wher)=>{
     let bgd;
     switch (wher) {
         case "Rain":
-         bgd= "url('./rainbg.jpg')"
+         bgd= "url('./rainbgg.gif')"
             break;
          case" Clear":
-            bgd= "url('./weatherBG.jpg')";
+            bgd= "url('./clear.gif')";
                    break;
         case "Snow":
              bgd=" url('./snowbg.jpg')";
                      break;
         case "Clouds":
-             bgd="url( './bg\ cloud.jpg')";
+             bgd="url( './clouds.gif')";
                      break;
+         case "Mist":
+                 bgd="url( './mistbgg.gif')";
+                      break;
+         case "Haze":
+             bgd="url( './haze2bgg.gif')";
+                  break;
+         case "Drizzle":
+             bgd="url( './drizzlebgg.gif')";
+                     break;
+       
         default:
-            bgd="url('./weather\ bg.jpg')"
+            bgd="url('./clear.gif')"
             break;
 
     }
